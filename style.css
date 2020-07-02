@@ -1,0 +1,162 @@
+body {
+    font-family: barlow;
+    background-color: #EFF6FF;
+    font-size: 13px;
+    color: #2A4A5C;
+}
+
+@font-face {
+    font-family: barlow;
+    src: url(fonts/Barlow-Light.otf);
+}
+
+.grey1 {
+    color: #7B8A92;
+}
+
+.grey2 {
+    color: #96A5B1;
+}
+
+a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.row {
+    width: 75%;
+    margin: auto;
+}
+
+.col {
+    float: left;
+    width: 50%;
+}
+
+#logo-img {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 0;
+    left: 15%;
+    margin-top: 20px;
+}
+
+#img-block img {
+    width: 100%;
+    height: 700px;
+}
+
+#content-block {
+    background-color: white;
+    height: 700px;
+    margin: auto;
+}
+
+#content-block > div {
+    margin: 40px 0;
+}
+
+.p-30-50 {
+    padding: 30px 50px;
+}
+
+.btn {
+    border: none;
+    padding: 5px;
+}
+
+.btn span {
+    color: white;
+    margin-right: 10px;
+    transform: translateY(-3px);
+    display: inline-block;
+}
+
+.btn-1 {
+    background-color: #255A9B;
+}
+
+.btn-2 {
+    background-color: #0076B6;
+    float: right;
+}
+
+#fb-img,
+#in-img {
+    width: 13px;
+    height: 13px;
+    margin: 3px;
+}
+
+.line {
+    width: 50%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    line-height: 5px;
+    margin: 20px auto;
+}
+
+.line span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.input-form {
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 3px;
+
+}
+
+.input-form :hover {
+    border-left: 2px solid #3698FB;
+}
+
+.input-form label {
+    padding-left: 5px;
+}
+
+.input-form input {
+    border: none;
+    outline: none;
+    display: block;
+    padding: 5px;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+    width: 100%;
+}
+
+fieldset > label {
+    margin-right: 20px;
+}
+
+fieldset > input {
+    margin-left: 0;
+}
+
+#tooltip {
+    width: 200px;
+    padding: 15px;
+    margin: 23px 0px 30px 10px;
+    z-index: 1;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px 5px #EEEEEE;
+    border-radius: 2px;
+    color: #96A5B1;
+}
+
+.btn-3 {
+    display: block;
+    border: none;
+    background-color: #3698FB;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    width: 180px;
+    height: 30px;
+    margin-top: 20px;
+}
