@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>1.1-test</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <script>
+        function moveTooltip() {
+            let checkedRadioId = document.querySelector("input[name=investor-type]:checked").id;
+            let radio = document.getElementById(checkedRadioId);
+            let tooltip = document.getElementById("tooltip");
+
+            let checkedRadioLeft = radio.offsetLeft;
+            let firstRadioLeft = document.getElementById("rd1").offsetLeft;
+            let px = checkedRadioLeft - firstRadioLeft + 10;
+
+            tooltip.style.marginLeft = px + "px";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="row">
+        <img src="img/logo.svg" alt="logo" id="logo-img">
+
+        <div id="img-block" class="col">
+            <img src="img/bg.jpg" alt="iintoo">
+        </div>
+
+        <div id="content-block" class="col">
+            <div class="p-30-50">
+                <h1>Get iintoo it today</h1>
+                <p class="grey1" style="font-size: 18px;">There is no charge or obligation upon registration.</p>
+
+                <div>
+                    <button class="btn btn-1">
+                        <img src="img/facebook.svg" id="fb-img" alt="Register with Facebook">
+                        <span>Register with Facebook</span>
+                    </button>
+
+                    <button class="btn btn-2">
+                        <img src="img/linkedin.svg" id="in-img" alt="Register with Linkedin">
+                        <span>Register with Linkedin</span>
+                    </button>
+                </div>
+
+                <p class="line"><span>OR</span></p>
+
+                <div>
+                    <div class="input-form">
+                        <label class="grey2">Email
+                            <input type="text">
+                        </label>
+                    </div>
+
+                    <div class="input-form" style="float: right;">
+                        <label class="grey2">Phone
+                            <input type="text">
+                        </label>
+                    </div>
+                </div>
+
+                <h2>What type of investor are you?</h2>
+                <p class="grey1">Select the type of investor you are below.</p>
+
+                <fieldset onchange="moveTooltip()">
+                    <input type="radio" value="individual" name="investor-type" checked="checked" id="rd1">
+                    <label>Individual</label>
+
+                    <input type="radio" value="business" name="investor-type" id="rd2">
+                    <label>Business</label>
+
+                    <input type="radio" value="ira" name="investor-type" id="rd3">
+                    <label>IRA</label>
+
+                    <input type="radio" value="trust" name="investor-type" id="rd4">
+                    <label>Trust</label>
+                </fieldset>
+
+                <div id="tooltip">
+                    <span>I am a natural person investing on my own behalf a sole owner, joint tenant, or tenant in common.</span>
+                </div>
+
+                <div>
+                    <input type="checkbox">
+                    <label class="grey2">I agree to the terms and receiving notifications from iintoo <a>View full terms</a></label>
+                </div>
+
+                <div>
+                    <button class="btn-3">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
